@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+    font-weight: 500;
+}
+
+:root
+
+body{
+    background-color: #128b7e;
+}
+
+.interfaz{
+    height: 90vh;
+    max-width: 450px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.nuevochat{
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #00cd40;
+    color: #fff;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    bottom: 40px;
+    right: 30px;
+    z-index: 2;
+
+}
+
+.mensajes{
+    position: relative;
+    overflow-y: scroll;
+}
+
+/* Encabezado */
+
+.encabezado{
+    width: 100%;
+    height: 113px;
+    background-color: #075e54;
+    border-radius: 40px 40px 0 0;
+    padding: 15px 15px 0px;
+    border-top: 16px solid #054d44;
+    box-shadow: 0 3px 2px #00000169 ;
+    margin-bottom: 10px;
+}
+
+.encabezado__principal{
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado__titulo{
+    color: #fff;
+    font-size: 28px;
+}
+
+.encabezado__menu{
+    display: flex;
+}
+
+.menu__item{
+    display: flex;
+    align-items: center;
+    margin-left:8px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.encabezado__nav{
+    display: flex;
+    margin-top: 20px;
+    height: 20%;
+    width: 100%;
+    align-items: center;
+}
+
+.nav__item{
+    font-size: 16px;
+    text-decoration: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #8ab3af;
+    align-content: center;
+    padding-bottom: 2px;
+}
+.nav__notificacion{
+    display: flex;
+    width: 14%;
+    height: 15%;
+    background-color: #8ab3af;
+    color: #075e54;
+    font-size: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5px 2px;
+    border-radius: 100%;
+    font-weight: bold;
+}
+.nav__estado{
+    width: 10px;
+    height: 10px;
+    background-color: #8ab3af;
+    border-radius: 100%;
+    margin: auto 0;
+}
+
+.nav__camera{
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+    color: #8ab3af;
+}
+
+.nav__item--seleccionado{
+    color: #fff;
+    box-shadow: 0 5px 0px #fff ;
+    padding: 1px;
+}
+.nav__item--seleccionado .nav__notificacion{
+    background-color: #fff;
+}
+
+
+
+/* Chats */
+
+.chat{
+    padding: 10px;
+    display: flex;
+    max-height: 85px;
+}
+
+.chat__perfil{
+    display: block;
+    width: 15%;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+.content{
+    width: 80%;
+    height: 100%;
+}
+
+.content__principal{
+    display: flex;
+    width: 100%;
+}
+
+.content__texto{
+    width: 90%;
+}
+
+.content__hora{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chat__division{
+    margin-top: 3%;
+}
+
+.content__nombre{
+    font-size: 20px;
+}
+
+.content__mensaje{
+    color: #727272;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.chat--mensajenew .content__hora{
+    color: #09d261;
+}
+.chat--mensajenew .content__hora::after{
+    content: "2";
+    display: flex;
+    color: #fff;
+    margin: 0 auto;
+    background-color: #09d261 ;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.chat--escribiendo .content__mensaje{
+    color: transparent;
+}
+
+.chat--escribiendo .content__mensaje::before{
+    content: "escribiendo...";
+    color: #09d261;
+    font-weight: 600;
+}
+
+.chat--mensajeenviado .content__mensaje::before{
+    content: "✓✓";
+    font-weight: bold;
+    margin-right: 3%;
+}
+
+.chat--mensajeleido .content__mensaje::before{
+    content: "✓✓";
+    font-weight: bold;
+    margin-right: 3%;
+    color: #60c6f8;
+}
