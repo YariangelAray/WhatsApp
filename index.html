@@ -9,7 +9,9 @@
     <title>WhatsApp</title>
 </head>
 <body>
+
     <div class="interfaz">
+        
         <header class="encabezado">
 
             <div class="encabezado__principal">
@@ -30,299 +32,157 @@
                 <a class="nav__camera"href="#">
                     <i class='bx bxs-camera'></i>
                 </a>
-                <a class="nav__item nav__item--seleccionado" href="#">CHATS
+                <a class="nav__item nav__item--seleccionado" href="#Chats">CHATS
                     <span class="nav__notificacion">1</span>
                 </a>
-                <a class="nav__item" href="#">ESTADOS
-                    <span class="nav__estado"></span>
+                <a class="nav__item" href="#Estados">ESTADOS
+                    <span class="nav__notificacion nav__estado"></span>
                 </a>
-                <a class="nav__item " href="#">LLAMADAS
+                <a class="nav__item " href="#Llamadas">LLAMADAS
                     <span class="nav__notificacion ">9</span>
                 </a>
             </nav>
         </header>
 
-        <div class="nuevochat">
-            <i class='bx bxs-message-square-detail bx-rotate-180' ></i>
-        </div>
+        <!-- CAJA DE MENSAJES -->
 
-        <div class="mensajes">     
+        <div id="Chats" class="caja mensajes">     
+
+            <div class="nuevochat">
+                <i class='bx bxs-message-square-detail bx-rotate-180' ></i>
+            </div>
     
-            <div class="chat">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Azumi</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">10:50</p>
+            <div class="bloque chat">
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">
+                <div class="content">
+                    <div class="content__texto">
+                        <h2 class="content__nombre">Azumi</h2>
+                        <p class="content__mensaje">Hola</p>
                     </div>
-    
-                    <hr class="chat__division">
-    
+                    <p class="content__hora">10:50</p>
                 </div>
             </div>
     
-            <div class="chat chat--mensajenew">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">David</h2>
-                            <p class="content__mensaje">Solo Eileen</p>
-                        </div>
-                        <p class="content__hora">10:37</p>
+            <div class="bloque chat chat--mensajenew">
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">
+                <div class="content">
+                    <div class="content__texto">
+                        <h2 class="content__nombre">Azumi</h2>
+                        <p class="content__mensaje">Hola</p>
                     </div>
-    
-                    <hr class="chat__division">
-    
+                    <p class="content__hora">10:50</p>
                 </div>
             </div>  
     
-            <div class="chat chat--escribiendo">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Valery</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">9:10</p>
+            <div class="bloque chat chat--escribiendo">
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">
+                <div class="content">
+                    <div class="content__texto">
+                        <h2 class="content__nombre">Azumi</h2>
+                        <p class="content__mensaje">Hola</p>
                     </div>
-    
-                    <hr class="chat__division">
-    
+                    <p class="content__hora">10:50</p>
                 </div>
             </div>
     
-            <div class="chat chat--mensajeenviado">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Manuel</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">8:46</p>
+            <div class="bloque chat chat--mensajeenviado">
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">  
+                <div class="content">
+                    <div class="content__texto">
+                        <h2 class="content__nombre">Azumi</h2>
+                        <p class="content__mensaje">Hola</p>
                     </div>
-    
-                    <hr class="chat__division">
-    
+                    <p class="content__hora">10:50</p>
                 </div>
             </div>
     
-            <div class="chat chat--mensajeleido">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Mafe</h2>
-                            <p class="content__mensaje">Oc</p>
-                        </div>
-                        <p class="content__hora">Ayer</p>
+            <div class="bloque chat chat--mensajeleido">
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">
+                <div class="content">
+                    <div class="content__texto">
+                        <h2 class="content__nombre">Azumi</h2>
+                        <p class="content__mensaje">Hola</p>
                     </div>
-    
-                    <hr class="chat__division">
-    
+                    <p class="content__hora">10:50</p>
                 </div>
             </div>
-
-            <div class="chat">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Azumi</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">10:50</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
-            <div class="chat chat--mensajenew">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">David</h2>
-                            <p class="content__mensaje">Solo Eileen</p>
-                        </div>
-                        <p class="content__hora">10:37</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>  
-    
-            <div class="chat chat--escribiendo">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Valery</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">9:10</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
-            <div class="chat chat--mensajeenviado">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Manuel</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">8:46</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
-            <div class="chat chat--mensajeleido">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Mafe</h2>
-                            <p class="content__mensaje">Oc</p>
-                        </div>
-                        <p class="content__hora">Ayer</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-
-            <div class="chat">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Azumi</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">10:50</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
-            <div class="chat chat--mensajenew">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">David</h2>
-                            <p class="content__mensaje">Solo Eileen</p>
-                        </div>
-                        <p class="content__hora">10:37</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>  
-    
-            <div class="chat chat--escribiendo">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Valery</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">9:10</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
-            <div class="chat chat--mensajeenviado">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Manuel</h2>
-                            <p class="content__mensaje">Hola</p>
-                        </div>
-                        <p class="content__hora">8:46</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
-            <div class="chat chat--mensajeleido">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="chat__perfil">
-    
-                <div class="chat__content content">
-    
-                    <div class="content__principal">
-                        <div class="content__texto">
-                            <h2 class="content__nombre">Mafe</h2>
-                            <p class="content__mensaje">Oc</p>
-                        </div>
-                        <p class="content__hora">Ayer</p>
-                    </div>
-    
-                    <hr class="chat__division">
-    
-                </div>
-            </div>
-    
             
-    
+        </div>
+
+        <!-- CAJA DE ESTADOS -->
+
+        <div id="Estados" class="caja estados">
+
+            <div class="nuevoestado">
+                <i class='bx bxs-camera'></i>
+            </div>
+            <div class="nuevoestadotexto">
+                <i class='bx bxs-pencil'></i>
+            </div>
+
+            <div class="bloque miestado">
+                <div class="miestado__foto">
+                    <img src="imagenes/perfil.jpg" alt="Perfil" class="miestado__imagen">
+                </div>
+                    
+                <div class="detalles">
+                    <h2 class="detalles__titulo">Mi estado</h2>
+                    <p class="detalles__mensaje">Añade una actualización</p>
+                </div>
+            </div>
+
+            <p class="estados__seccion">Recientes</p>
+            
+            <div class="bloque estado estado--reciente">
+                
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto estado__foto">
+                    
+                <div class="detalles">
+                    <h2 class="detalles__titulo">Azumi</h2>
+                    <p class="detalles__hora">9:10 a.m</p>
+                </div>
+            </div>
+            <div class="bloque estado estado--reciente">
+                
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto estado__foto">
+                    
+                <div class="detalles">
+                    <h2 class="detalles__titulo">Azumi</h2>
+                    <p class="detalles__hora">9:10 a.m</p>
+                </div>
+            </div>
+
+            <p class="estados__seccion">Vistos</p>
+
+            <div class="bloque estado estado--visto">
+                
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto estado__foto">
+                    
+                <div class="detalles">
+                    <h2 class="detalles__titulo">Valery</h2>
+                    <p class="detalles__hora">8:40 a.m</p>
+                </div>
+            </div>
+
+
 
         </div>
-      
+
+        <!-- CAJA DE LLAMADAS -->
+        <div id="Llamadas" class="caja llamadas">
+
+            <div class="bloque chat">
+                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">
+                <div class="content">
+                    <div class="content__texto">
+                        <h2 class="content__nombre">Azumi :p</h2>
+                        <p class="content__mensaje">Hola</p>
+                    </div>
+                    <p class="content__hora">10:50</p>
+                </div>
+            </div>
+
+        </div>
 
     </div>
 </body>

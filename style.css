@@ -26,38 +26,24 @@ body{
     flex-direction: column;
 }
 
-.nuevochat{
-    position: absolute;
-    display: flex;
-    width: 60px;
-    height: 60px;
-    background-color: #00cd40;
-    color: #fff;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    bottom: 40px;
-    right: 30px;
-    z-index: 1;
-}
-.nuevochat:hover{
-    cursor: pointer;
-}
 
-.mensajes{
-    position: relative;
+.caja{
+    display: none;
     overflow-y: scroll;
+    transition: 1s;
+}
+.caja:target{
+    display: block;
 }
 
 
-.mensajes::-webkit-scrollbar {
+.caja::-webkit-scrollbar {
     -webkit-appearance: none;
 }
-.mensajes::-webkit-scrollbar:vertical{
+.caja::-webkit-scrollbar:vertical{
     width:1px;
 }
-.mensajes::-webkit-scrollbar-thumb {
+.caja::-webkit-scrollbar-thumb {
     background-color: transparent;
 }
 
@@ -129,6 +115,9 @@ body{
     border-radius: 100%;
     text-align: center;
 }
+.nav__item:hover{
+    background-color: #054d44;
+}
 .nav__estado{
     width: 10px;
     height: 10px;
@@ -152,35 +141,53 @@ body{
     padding: 1px;
     box-shadow: 0px 1px 0px #fff;
 }
-.nav__item--seleccionado .nav__notificacion{
+.nav__item--seleccionado .nav__notificacion {
     background-color: #fff;
 }
 
-
-
-/* Chats */
-
-.chat{
+.bloque{
     padding: 10px;
     display: flex;
     max-height: 85px;
 }
-
-.chat__perfil{
+.bloque__foto{
     display: block;
     width: 15%;
     border-radius: 100%;
     margin-right: 15px;
 }
 
-.content{
-    width: 80%;
-    height: 100%;
+/* Chats */
+
+.nuevochat{
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #09d261;
+    color: #fff;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1;
+    box-shadow: 0 2px 8px #a5a5a5;
+}
+.nuevochat:hover{
+    cursor: pointer;
 }
 
-.content__principal{
+.chat:hover{
+    background-color: #e0e0e0;
+}
+
+.content{
     display: flex;
     width: 100%;
+    padding-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .content__texto{
@@ -193,10 +200,6 @@ body{
     font-weight: 600;
 }
 
-.chat__division{
-    margin-top: 3%;
-}
-
 .content__nombre{
     font-size: 20px;
 }
@@ -205,6 +208,7 @@ body{
     color: #727272;
     margin-top: 5px;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .chat--mensajenew .content__hora{
@@ -247,4 +251,114 @@ body{
     font-weight: bold;
     margin-right: 3%;
     color: #60c6f8;
+}
+
+/* Estados */
+
+.detalles{
+    padding-top: 10px;
+}
+.detalles__titulo{
+    font-size: 20px;
+}
+.detalles__mensaje{
+    color: #727272;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.detalles__hora{
+    color: #727272;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.miestado__foto{
+    display: block;
+    width: 15%;
+    margin-right: 15px;
+    position: relative;
+}
+.miestado__imagen{
+    width: 100%;
+    border-radius: 100%;
+}
+.miestado__foto:hover{
+    cursor: pointer;
+}
+.miestado__foto::after{
+    content: "+";
+    color: #fff;
+    background-color: #00cd40;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    text-align: center;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    bottom: 5px;
+    right: -5px;
+}
+.estado:hover{
+    background-color: #e0e0e0;
+}
+.estados__seccion{
+    color: #727272;
+    margin: 10px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding-left: 10px;
+}
+
+.estado--reciente .estado__foto{
+    border: 3px solid #00cd40;
+    padding: 3px;
+}
+
+.estado--visto .estado__foto{
+    border: 3px solid #a5a5a5;
+    padding: 3px;
+}
+
+.nuevoestado{
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #09d261;
+    color: #fff;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    bottom: 40px;
+    right: 30px;
+    z-index: 1;
+    box-shadow: 0 2px 8px #a5a5a5;
+}
+.nuevoestado:hover{
+    cursor: pointer;
+}
+
+.nuevoestadotexto{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #e9edf0;
+    color: #727272;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    bottom: 120px;
+    right: 35px;
+    z-index: 1;
+    box-shadow: 0 2px 8px #a5a5a5;
+}
+.nuevoestadotexto:hover{
+    cursor: pointer;
 }
