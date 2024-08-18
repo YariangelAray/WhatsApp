@@ -1,0 +1,67 @@
+.nuevo-estado-texto{
+    width: 50px;
+    height: 50px;
+    background-color: var(--gris-claro);
+    color: var(--gris-detalles);
+    bottom: 120px;
+    right: 35px;
+}
+
+.mi-estado__foto{
+    display: block;
+    width: 15%;
+    margin-right: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.mi-estado__imagen{
+    width: 100%;
+    border-radius: 100%;
+}
+.mi-estado__detalles{
+    padding-top: 8px;
+}
+
+.mi-estado__foto::after{
+    content: "+";
+    color: var(--blanco);
+    background-color: var(--verde-distintivo);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    text-align: center;
+    border-radius: 100%;
+    border: 3px solid var(--blanco);
+    bottom: 5px;
+    right: -5px;
+}
+
+.estados__seccion{
+    color: var(--gris-detalles);
+    margin: 10px 5px;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding-left: 10px;
+}
+
+.estado:hover{
+    background-color: var(--gris-claro);
+}
+
+.estado__detalles{
+    padding-top: 10px;
+}
+
+/* Modificaciones */
+
+.estado--reciente .estado__foto{
+    border: 3px solid var(--verde-distintivo);
+    padding: 3px;
+}
+
+.estado--visto .estado__foto{
+    border: 3px solid var(--color-sombra);
+    padding: 3px;
+}

@@ -1,0 +1,77 @@
+.chat:hover{
+    background-color: var(--gris-claro);
+}
+
+.chat__content{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--gris-claro);
+    align-items: center;
+}
+
+.chat__texto{
+    width: 90%;
+}
+.chat__nombre{
+    font-size: 19px;
+}
+.chat__mensaje{
+    color: var(--gris-detalles);
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.chat__tiempo{
+    display: flex; 
+    color: var(--gris-detalles);
+    font-size: 16px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+/* Modificaciones */
+
+.chat--mensajenuevo .chat__tiempo{
+    color: var(--verde-distintivo);
+    display: block;
+}
+.chat--mensajenuevo .chat__tiempo::after{
+    content: "2";
+    display: flex;
+    color: var(--blanco);
+    margin: 0 auto;
+    background-color: var(--verde-distintivo) ;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+.chat--escribiendo .chat__mensaje{
+    color: transparent;
+}
+.chat--escribiendo .chat__mensaje::before{
+    content: "escribiendo...";
+    color: var(--verde-distintivo);
+    font-weight: 600;
+}
+
+
+.chat--mensajeenviado .chat__mensaje::before{
+    content: "✓✓";
+    font-weight: bold;
+    margin-right: 3%;
+}
+
+
+.chat--mensajeleido .chat__mensaje::before{
+    content: "✓✓";
+    font-weight: bold;
+    margin-right: 3%;
+    color: var(--azul-visto);
+}

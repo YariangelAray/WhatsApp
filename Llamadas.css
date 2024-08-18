@@ -1,0 +1,47 @@
+.llamada:hover{
+    background-color: var(--gris-claro);
+}
+
+.llamada__content{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--gris-claro);
+    align-items: center;
+}
+
+.llamada__detalles{
+    width: 90%;
+}
+
+.llamada__icon{
+    display: flex;
+    align-items: center;
+    color: var(--fondo-encabezado);
+}
+
+/* Modificaciones */
+
+.llamada--realizada .detalles__tiempo::before{
+    content: "↗";
+    color: var(--verde-distintivo);
+    margin-right: 8px;
+    font-style: normal;
+}
+
+.llamada--perdida .detalles__titulo{
+    color: red;
+}
+
+.llamada--perdida .detalles__tiempo::before{
+    content: "↙";
+    color:red;
+    margin-right: 8px;
+    font-style: normal;
+}
+
+.llamada--recibida .detalles__tiempo::before{
+    content: "↙";
+    color: var(--verde-distintivo);
+    margin-right: 8px;
+    font-style: normal;
+}
