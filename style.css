@@ -3,6 +3,7 @@
 @import url(Chats.css);
 @import url(Estados.css);
 @import url(Llamadas.css);
+@import url(Camara.css);
 
 
 *{
@@ -18,77 +19,71 @@ body{
 }
 
 .interfaz{
-    height: 90vh;
-    max-width: 450px;
+    width: 450px;
+    height: 780px;
     margin: 10px auto;
     background-color: var(--blanco);
     border-radius: 30px;
-    padding: 5px;
+    border: 5px solid var(--blanco);
     position: relative;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    overflow: hidden;
 }
+
+/* ENCABEZADO */
 
 .encabezado{
     width: 100%;
     height: auto;
     background-color: var(--fondo-encabezado);
     border-radius: 30px 30px 0 0;
-    padding: 15px 15px 0px;
+    padding: 15px 15px;
     border-top: 18px solid var(--borde-encabezado);
-    box-shadow: 0 3px 1.5px var(--color-sombra) ;
-    margin-bottom: 10px;
-}
-
-
-.encabezado__principal{
-    margin-top: 8px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    
 }
 .encabezado__titulo{
     color: var(--blanco);
     font-size: 28px;
+    font-weight: bold;
+    padding-left: 10px;
 }
 .encabezado__menu{
     display: flex;
+    gap: 12px;
 }
 .menu__item{
     display: flex;
-    align-items: center;
-    margin-left:8px;
     text-decoration: none;
-    font-size: 24px;
+    align-items: center;
+    font-size: 26px;
     color: var(--blanco);
     cursor: pointer;
 }
 
+/* NAVEGACIÓN */
 
-.encabezado__nav{
+.nav{
+    background-color: var(--fondo-encabezado);
     display: flex;
-    margin-top: 20px;
-    height: 45px;
+    height: 50px;
     width: 100%;
-    align-items: center;
+    box-shadow: 0 2px 1px var(--color-sombra) ;
+    margin-bottom: 10px;
 }
 .nav__item{
     font-size: 16px;
-    text-decoration: none;
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     color: var(--color-items-texto);
-    align-items: center;
     padding-bottom: 2px;
-}
-.nav__camera{
-    font-size: 28px;
-    display: flex;
+    padding: 10px;
     align-items: center;
-    text-decoration: none;
-    margin-right: 10px;
-    color: var(--color-items-texto);
 }
 .nav__notificacion{
     width: 16px;
@@ -106,41 +101,89 @@ body{
     height: 10px;
     background-color: var(--color-items-texto);
     border-radius: 100%;
-    margin: auto 0;
 }
-
 
 .nav__item:hover{
+    color: var(--gris-claro);
+}
+.nav__item:hover > span{
+    background-color: var(--gris-claro);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* CONTENIDO */
+
+.contenido{
+    display: flex;
+    position: relative;
+    width: 1350px;
+    height: 640px;
+    transition: 0.2s;
+}
+
+.caja{
+    width: 450px;
+    height: 100%;
+    padding-right:  5px;
+    overflow-y: scroll;
+}
+
+input[id="Chats"]:checked~ .contenido{
+    left: calc(450px * 0);
+}
+input[id="Estados"]:checked~ .contenido{
+    left: calc(450px * -1);
+}
+input[id="Llamadas"]:checked~ .contenido{
+    left: calc(450px * -2);
+}
+
+
+.principal input:nth-child(1):checked~.nav .nav__item:nth-child(1),
+.principal input:nth-child(2):checked~.nav .nav__item:nth-child(2),
+.principal input:nth-child(3):checked~.nav .nav__item:nth-child(3) {
     color: var(--blanco);
     box-shadow: inset 0px -5px 0px var(--blanco);
+    transition: 0.2s;
 }
-.nav__camera:hover{
-    color: var(--blanco);
-}
-.nav__item:hover .nav__notificacion {
+.principal input:nth-child(1):checked~.nav .nav__item:nth-child(1) span,
+.principal input:nth-child(2):checked~.nav .nav__item:nth-child(2) span,
+.principal input:nth-child(3):checked~.nav .nav__item:nth-child(3) span{
     background-color: var(--blanco);
 }
 
 
-.caja{
-    display: none;
-    overflow-y: scroll;
+::-webkit-scrollbar{
+    -webkit-appearance:none;
 }
-.caja:target{
-    display: block;
-}
-
-
-.caja::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-.caja::-webkit-scrollbar:vertical{
+::-webkit-scrollbar:vertical{
     width:1px;
 }
-.caja::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
 
+.caja__burbuja{
+    position: absolute;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1;
+    box-shadow: 0 5px 10px var(--color-sombra);
+    cursor: pointer;
+    background-color: var(--verde-distintivo);
+    color: var(--blanco);
+    transition: transform 0.3s;
+}
+.caja__burbuja:hover{
+    transform: scale(1.1);
+}
 
 .bloque{
     padding: 10px;
@@ -154,24 +197,6 @@ body{
     margin-right: 15px;
 }
 
-
-.caja__burbuja{
-    position: absolute;
-    display: flex;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    bottom: 40px;
-    right: 30px;
-    z-index: 1;
-    box-shadow: 0 2px 8px var(--color-sombra);
-    cursor: pointer;
-    background-color: var(--verde-distintivo);
-    color: var(--blanco);
-}
 
 
 .detalles__titulo{

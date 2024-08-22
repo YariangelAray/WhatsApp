@@ -1,0 +1,65 @@
+.camara{
+    width: 100%;
+    height: 100%;
+    background-image: var(--fondo-camara);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    display: none;
+    position: relative;
+}
+
+.camara:target{
+    display: block;
+}
+
+.camara__borde{
+    padding: 8px;
+    width: 90px;
+    height: 90px;
+    border: 5px solid var(--blanco);
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+.camara__disparador{
+    width: 100%;
+    height: 100%;
+    background-color: var(--blanco);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.icono{
+    display:flex;
+    width: 55px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    border-radius: 100%;
+    background-color: var(--transparencia);
+    text-decoration: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+.icono:hover{
+    background-color: var(--transparencia-hover);
+    transition: 0.2s;
+}
+
+.camara__salir{
+    top: 20px;
+    left: 20px;
+}
+.camara__imagenes{
+    bottom: 35px;
+    left: 20px;
+}
+.camara__voltear{
+    bottom: 35px;
+    right: 20px;
+}

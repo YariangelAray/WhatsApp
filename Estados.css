@@ -3,8 +3,13 @@
     height: 50px;
     background-color: var(--gris-claro);
     color: var(--gris-detalles);
-    bottom: 120px;
-    right: 35px;
+    bottom: 110px;
+}
+.nuevo-estado{
+    left: 810px;
+}
+.nuevo-estado-texto{
+    left: 816px;
 }
 
 .mi-estado__foto{

@@ -9,4 +9,7 @@
     --color-items-texto: #8ab3af;
     --color-sombra: #a5a5a5;
     --gris-claro: #e0e0e0;
+    --fondo-camara:url(imagenes/Foto.jpg), linear-gradient( #727272, #727272);
+    --transparencia:#00000090;
+    --transparencia-hover:#38383860;
 }

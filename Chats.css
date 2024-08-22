@@ -1,3 +1,7 @@
+.nuevo-chat{
+    left: 360px;
+}
+
 .chat:hover{
     background-color: var(--gris-claro);
 }

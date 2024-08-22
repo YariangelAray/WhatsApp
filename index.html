@@ -18,358 +18,395 @@
         
         <header class="encabezado">
 
-            <main class="encabezado__principal">
-                <h1 class="encabezado__titulo">WhatsApp</h1>
+            <h1 class="encabezado__titulo">WhatsApp</h1>
 
-                <div class="encabezado__menu">
-                    <span class="menu__item" href="#">
-                        <i class='bx bx-search'></i>
-                    </span>
-                    <span class="menu__item" href="#">
-                        <i class='bx bx-dots-vertical-rounded' ></i>
-                    </span>
+            <div class="encabezado__menu">
+                <a class="menu__item" href="#Camara">
+                    <i class='bx bx-camera'></i>
+                </a>
+                <span class="menu__item">
+                    <i class='bx bx-search'></i>
+                </span>
+                <span class="menu__item">
+                    <i class='bx bx-dots-vertical-rounded' ></i>
+                </span>
+                
+            </div>
 
-                </div>
-            </main>
+        </header>
+
+        <!-- PRINCIPAL-->
+
+        <main class="principal">
 
             <!-- NAVEGACIÓN -->
 
-            <nav class="encabezado__nav">
-                <a class="nav__camera"href="#">
-                    <i class='bx bxs-camera'></i>
-                </a>
+            <input type="radio" id="Chats" name="item" checked>
+            <input type="radio" id="Estados" name="item">
+            <input type="radio" id="Llamadas" name="item">
 
-                <a class="nav__item" href="#Chats">CHATS
+            <nav class="nav">
+                <label for="Chats" class="nav__item">CHATS
                     <span class="nav__notificacion">2</span>
-                </a>
-                <a class="nav__item" href="#Estados">ESTADOS
-                    <span class="nav__notificacion nav__notificacion-estado"></span>
-                </a>
-                <a class="nav__item" href="#Llamadas">LLAMADAS
+                </label>
+    
+                <label for="Estados" class="nav__item">ESTADOS
+                    <span class="nav__notificacion-estado"></span>
+                </label>
+    
+                <label for="Llamadas" class="nav__item">LLAMADAS
                     <span class="nav__notificacion">3</span>
-                </a>
+                </label>
             </nav>
-        </header>
 
-        <!-- CAJA DE MENSAJES -->
+            <!-- CONTENIDO -->
 
-        <div id="Chats" class="caja mensajes">     
+            <div class="contenido">
+                
+                <!-- CAJA DE MENSAJES -->
 
-            <!-- BURBBUJA DE NUEVO CHAT -->
+                <section class="caja mensajes">     
 
-            <div class="caja__burbuja nuevo-chat">
-                <i class='bx bxs-message-square-detail bx-rotate-180' ></i>
-            </div>
+                    <!-- BURBBUJA DE NUEVO CHAT -->
 
-            <!-- MENSAJES -->
-
-            <div class="bloque chat">
-                <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Azumi</h2>
-                        <p class="chat__mensaje">El taekook mis papás u.u</p>
+                    <div class="caja__burbuja nuevo-chat">
+                        <i class='bx bxs-message-square-detail bx-rotate-180' ></i>
                     </div>
-                    <p class="chat__tiempo">12:48</p>
-                </div>
-            </div>
-    
-            <div class="bloque chat chat--mensajenuevo">
-                <img src="imagenes/perfil6.jpg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">David</h2>
-                        <p class="chat__mensaje">Solo Eileen</p>
-                    </div>
-                    <p class="chat__tiempo">12:07</p>
-                </div>
-            </div>  
-    
-            <div class="bloque chat chat--escribiendo">
-                <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Valery</h2>
-                        <p class="chat__mensaje">Oli</p>
-                    </div>
-                    <p class="chat__tiempo">11:32</p>
-                </div>
-            </div>
-    
-            <div class="bloque chat chat--mensajeenviado">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">  
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Manuel</h2>
-                        <p class="chat__mensaje">Ok</p>
-                    </div>
-                    <p class="chat__tiempo">11:23</p>
-                </div>
-            </div>
-    
-            <div class="bloque chat chat--mensajeleido">
-                <img src="imagenes/perfil8.jpg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Mafe</h2>
-                        <p class="chat__mensaje">Sí</p>
-                    </div>
-                    <p class="chat__tiempo">9:12</p>
-                </div>
-            </div>
 
-            <div class="bloque chat">
-                <img src="imagenes/perfil9.jpeg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Mami</h2>
-                        <p class="chat__mensaje">Bueno</p>
-                    </div>
-                    <p class="chat__tiempo">Ayer</p>
-                </div>
-            </div>
+                    <!-- MENSAJES -->
 
+                    <div class="bloque chat">
+                        <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Azumi</h2>
+                                <p class="chat__mensaje">El taekook mis papás u.u</p>
+                            </div>
+                            <p class="chat__tiempo">12:48</p>
+                        </div>
+                    </div>
             
-            <div class="bloque chat chat--mensajenuevo">
-                <img src="imagenes/perfil1.jpg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Laura</h2>
-                        <p class="chat__mensaje">Vale</p>
-                    </div>
-                    <p class="chat__tiempo">Ayer</p>
-                </div>
-            </div>
+                    <div class="bloque chat chat--mensajenuevo">
+                        <img src="imagenes/perfil6.jpg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">David</h2>
+                                <p class="chat__mensaje">Solo Eileen</p>
+                            </div>
+                            <p class="chat__tiempo">12:07</p>
+                        </div>
+                    </div>  
             
-            <div class="bloque chat chat--mensajeleido">
-                <img src="imagenes/perfil10.jpeg" alt="Perfil" class="bloque__foto">
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Mi apa</h2>
-                        <p class="chat__mensaje">Esta bieen</p>
+                    <div class="bloque chat chat--escribiendo">
+                        <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Valery</h2>
+                                <p class="chat__mensaje">Oli</p>
+                            </div>
+                            <p class="chat__tiempo">11:32</p>
+                        </div>
                     </div>
-                    <p class="chat__tiempo">Ayer</p>
-                </div>
-            </div>
+            
+                    <div class="bloque chat chat--mensajeenviado">
+                        <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto">  
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Manuel</h2>
+                                <p class="chat__mensaje">Ok</p>
+                            </div>
+                            <p class="chat__tiempo">11:23</p>
+                        </div>
+                    </div>
+            
+                    <div class="bloque chat chat--mensajeleido">
+                        <img src="imagenes/perfil8.jpg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Mafe</h2>
+                                <p class="chat__mensaje">Sí</p>
+                            </div>
+                            <p class="chat__tiempo">9:12</p>
+                        </div>
+                    </div>
 
-            <div class="bloque chat chat--mensajeenviado">
-                <img src="imagenes/perfil5.jpg" alt="Perfil" class="bloque__foto">  
-                <div class="chat__content ">
-                    <div class="chat__texto">
-                        <h2 class="chat__nombre">Juan Pabloo</h2>
-                        <p class="chat__mensaje">AHSJAHJHSJASJ</p>
+                    <div class="bloque chat">
+                        <img src="imagenes/perfil9.jpeg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Mami</h2>
+                                <p class="chat__mensaje">Bueno</p>
+                            </div>
+                            <p class="chat__tiempo">Ayer</p>
+                        </div>
                     </div>
-                    <p class="chat__tiempo">Ayer</p>
-                </div>
-            </div>
-            
-        </div>
+
+                    
+                    <div class="bloque chat chat--mensajenuevo">
+                        <img src="imagenes/perfil1.jpg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Laura</h2>
+                                <p class="chat__mensaje">Vale</p>
+                            </div>
+                            <p class="chat__tiempo">Ayer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bloque chat chat--mensajeleido">
+                        <img src="imagenes/perfil10.jpeg" alt="Perfil" class="bloque__foto">
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Mi apa</h2>
+                                <p class="chat__mensaje">Esta bieen</p>
+                            </div>
+                            <p class="chat__tiempo">Ayer</p>
+                        </div>
+                    </div>
+
+                    <div class="bloque chat chat--mensajeenviado">
+                        <img src="imagenes/perfil5.jpg" alt="Perfil" class="bloque__foto">  
+                        <div class="chat__content ">
+                            <div class="chat__texto">
+                                <h2 class="chat__nombre">Juan Pabloo</h2>
+                                <p class="chat__mensaje">AHSJAHJHSJASJ</p>
+                            </div>
+                            <p class="chat__tiempo">Ayer</p>
+                        </div>
+                    </div>
+                    
+                </section>
 
         <!-- CAJA DE ESTADOS -->
 
-        <div id="Estados" class="caja estados">
+                <section class="caja estados">
 
-            <!-- BURBUJAS DE SUBIR NUEVOS ESTADOS -->
+                    <!-- BURBUJAS DE SUBIR NUEVOS ESTADOS -->
 
-            <div class="caja__burbuja nuevo-estado">
-                <i class='bx bxs-camera'></i>
-            </div>
-            <div class="caja__burbuja nuevo-estado-texto">
-                <i class='bx bxs-pencil'></i>
-            </div>
+                    <div class="caja__burbuja nuevo-estado">
+                        <i class='bx bxs-camera'></i>
+                    </div>
+                    <div class="caja__burbuja nuevo-estado-texto">
+                        <i class='bx bxs-pencil'></i>
+                    </div>
 
-            <!-- MI ESTADO -->
+                    <!-- MI ESTADO -->
 
-            <div class="bloque mi-estado">
-                <div class="mi-estado__foto">
-                    <img src="imagenes/perfil11.jpg" alt="Perfil" class="mi-estado__imagen">
-                </div>
+                    <div class="bloque mi-estado">
+                        <div class="mi-estado__foto">
+                            <img src="imagenes/perfil11.jpg" alt="Perfil" class="mi-estado__imagen">
+                        </div>
+                            
+                        <div class="mi-estado__detalles">
+                            <h2 class="detalles__titulo">Mi estado</h2>
+                            <p class="detalles__mensaje">Añade una actualización</p>
+                        </div>
+                    </div>
+
+                    <!-- ESTADOS RECIENTES -->
+
+                    <p class="estados__seccion">Recientes</p>
                     
-                <div class="mi-estado__detalles">
-                    <h2 class="detalles__titulo">Mi estado</h2>
-                    <p class="detalles__mensaje">Añade una actualización</p>
-                </div>
-            </div>
+                    <div class="bloque estado estado--reciente">
+                        <img src="imagenes/perfil9.jpeg" alt="Perfil" class="bloque__foto estado__foto">
+                        <div class="estado__detalles">
+                            <h2 class="detalles__titulo">Mami</h2>
+                            <p class="detalles__tiempo">10:10 a.m</p>
+                        </div>
+                    </div>
 
-            <!-- ESTADOS RECIENTES -->
+                    <div class="bloque estado estado--reciente">
+                        <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto estado__foto">
+                        <div class="estado__detalles">
+                            <h2 class="detalles__titulo">Azumi</h2>
+                            <p class="detalles__tiempo">9:10 a.m</p>
+                        </div>
+                    </div>
 
-            <p class="estados__seccion">Recientes</p>
-            
-            <div class="bloque estado estado--reciente">
-                <img src="imagenes/perfil9.jpeg" alt="Perfil" class="bloque__foto estado__foto">
-                <div class="estado__detalles">
-                    <h2 class="detalles__titulo">Mami</h2>
-                    <p class="detalles__tiempo">10:10 a.m</p>
-                </div>
-            </div>
+                    <!-- ESTADOS VISTOS -->
 
-            <div class="bloque estado estado--reciente">
-                <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto estado__foto">
-                <div class="estado__detalles">
-                    <h2 class="detalles__titulo">Azumi</h2>
-                    <p class="detalles__tiempo">9:10 a.m</p>
-                </div>
-            </div>
+                    <p class="estados__seccion">Vistos</p>
 
-            <!-- ESTADOS VISTOS -->
+                    <div class="bloque estado estado--visto">
+                        <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
+                        <div class="detalles">
+                            <h2 class="detalles__titulo">Valery</h2>
+                            <p class="detalles__tiempo">8:40 a.m</p>
+                        </div>
+                    </div>
 
-            <p class="estados__seccion">Vistos</p>
+                    <div class="bloque estado estado--visto">
+                        <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
+                        <div class="detalles">
+                            <h2 class="detalles__titulo">Dario</h2>
+                            <p class="detalles__tiempo">8:31 a.m</p>
+                        </div>
+                    </div>
 
-            <div class="bloque estado estado--visto">
-                <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
-                <div class="detalles">
-                    <h2 class="detalles__titulo">Valery</h2>
-                    <p class="detalles__tiempo">8:40 a.m</p>
-                </div>
-            </div>
+                    <div class="bloque estado estado--visto">
+                        <img src="imagenes/perfil6.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
+                        <div class="detalles">
+                            <h2 class="detalles__titulo">David</h2>
+                            <p class="detalles__tiempo">Ayer</p>
+                        </div>
+                    </div>
 
-            <div class="bloque estado estado--visto">
-                <img src="imagenes/perfil.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
-                <div class="detalles">
-                    <h2 class="detalles__titulo">Dario</h2>
-                    <p class="detalles__tiempo">8:31 a.m</p>
-                </div>
-            </div>
+                    <div class="bloque estado estado--visto">
+                        <img src="imagenes/perfil3.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
+                        <div class="detalles">
+                            <h2 class="detalles__titulo">Kevin</h2>
+                            <p class="detalles__tiempo">Ayer</p>
+                        </div>
+                    </div>
 
-            <div class="bloque estado estado--visto">
-                <img src="imagenes/perfil6.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
-                <div class="detalles">
-                    <h2 class="detalles__titulo">David</h2>
-                    <p class="detalles__tiempo">Ayer</p>
-                </div>
-            </div>
+                    <div class="bloque estado estado--visto">
+                        <img src="imagenes/perfil2.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
+                        <div class="detalles">
+                            <h2 class="detalles__titulo">Duban</h2>
+                            <p class="detalles__tiempo">Ayer</p>
+                        </div>
+                    </div>
 
-            <div class="bloque estado estado--visto">
-                <img src="imagenes/perfil3.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
-                <div class="detalles">
-                    <h2 class="detalles__titulo">Kevin</h2>
-                    <p class="detalles__tiempo">Ayer</p>
-                </div>
-            </div>
-
-            <div class="bloque estado estado--visto">
-                <img src="imagenes/perfil2.jpg" alt="Perfil" class="bloque__foto estado__foto"> 
-                <div class="detalles">
-                    <h2 class="detalles__titulo">Duban</h2>
-                    <p class="detalles__tiempo">Ayer</p>
-                </div>
-            </div>
-
-        </div>
+                </section>
 
         <!-- CAJA DE LLAMADAS -->
 
-        <div id="Llamadas" class="caja llamadas">
+                <section class="caja llamadas">
 
-            <!-- BURBUJA DE NUEVA LLAMADA -->
+                    <!-- BURBUJA DE NUEVA LLAMADA -->
 
-            <div class="caja__burbuja nueva-llamada">
-                <i class="material-symbols-outlined">add_call</i>
-            </div>
-
-            <!-- LLAMADAS -->
-
-            <div class="bloque llamada llamada--realizada">
-                <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto llamada__foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Azumi (2)</h2>
-                        <p class="detalles__tiempo">Ayer, 7:02 p.m.</p>
+                    <div class="caja__burbuja nueva-llamada">
+                        <i class="material-symbols-outlined">add_call</i>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--realizada">
-                <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Azumi</h2>
-                        <p class="detalles__tiempo">Ayer, 5:53 p.m.</p>
+                    <!-- LLAMADAS -->
+
+                    <div class="bloque llamada llamada--realizada">
+                        <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto llamada__foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Azumi (2)</h2>
+                                <p class="detalles__tiempo">Ayer, 7:02 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">videocam</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--realizada">
-                <img src="imagenes/perfil10.jpeg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Mi apa</h2>
-                        <p class="detalles__tiempo">Ayer, 4:37 p.m.</p>
+                    <div class="bloque llamada llamada--realizada">
+                        <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Azumi</h2>
+                                <p class="detalles__tiempo">Ayer, 5:53 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">videocam</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--perdida">
-                <img src="imagenes/perfil10.jpeg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Mi apa</h2>
-                        <p class="detalles__tiempo">Ayer, 4:34 p.m.</p>
+                    <div class="bloque llamada llamada--realizada">
+                        <img src="imagenes/perfil10.jpeg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Mi apa</h2>
+                                <p class="detalles__tiempo">Ayer, 4:37 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--recibida">
-                <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Azumi (3)</h2>
-                        <p class="detalles__tiempo">Ayer, 10:43 p.m.</p>
+                    <div class="bloque llamada llamada--perdida">
+                        <img src="imagenes/perfil10.jpeg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Mi apa</h2>
+                                <p class="detalles__tiempo">Ayer, 4:34 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--recibida">
-                <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Valery</h2>
-                        <p class="detalles__tiempo">12 de agosto, 12:58 p.m.</p>
+                    <div class="bloque llamada llamada--recibida">
+                        <img src="imagenes/perfil7.jpg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Azumi (3)</h2>
+                                <p class="detalles__tiempo">Ayer, 10:43 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">videocam</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--perdida">
-                <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Valery (2)</h2>
-                        <p class="detalles__tiempo">12 de agosto, 12:53 p.m.</p>
+                    <div class="bloque llamada llamada--recibida">
+                        <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Valery</h2>
+                                <p class="detalles__tiempo">12 de agosto, 12:58 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">videocam</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">videocam</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--recibida">
-                <img src="imagenes/perfil6.jpg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">David</h2>
-                        <p class="detalles__tiempo">3 de agosto, 6:07 p.m.</p>
+                    <div class="bloque llamada llamada--perdida">
+                        <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Valery (2)</h2>
+                                <p class="detalles__tiempo">12 de agosto, 12:53 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">videocam</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
-                </div>
-            </div>
 
-            <div class="bloque llamada llamada--perdida">
-                <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto llamada_foto">
-                <div class="llamada__content">
-                    <div class="llamada__detalles">
-                        <h2 class="detalles__titulo">Valery (84)</h2>
-                        <p class="detalles__tiempo">1 de agosto, 2:52 p.m.</p>
+                    <div class="bloque llamada llamada--recibida">
+                        <img src="imagenes/perfil6.jpg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">David</h2>
+                                <p class="detalles__tiempo">3 de agosto, 6:07 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
+                        </div>
                     </div>
-                    <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
-                </div>
-            </div>
-        
 
+                    <div class="bloque llamada llamada--perdida">
+                        <img src="imagenes/perfil4.jpg" alt="Perfil" class="bloque__foto llamada_foto">
+                        <div class="llamada__content">
+                            <div class="llamada__detalles">
+                                <h2 class="detalles__titulo">Valery (84)</h2>
+                                <p class="detalles__tiempo">1 de agosto, 2:52 p.m.</p>
+                            </div>
+                            <p class="llamada__icon"><span class="material-symbols-outlined">call</span></p>
+                        </div>
+                    </div>
+                
+
+                </section>
+            </div>
+
+            
+        </main>
+
+        <div id="Camara" class="camara">
+
+            <a class="icono camara__salir" href="#">
+                <i class='bx bx-x'></i>
+            </a>
+
+            <div class="camara__borde">
+                <div class="camara__disparador"></div>
+            </div>
+
+            <span class="icono camara__imagenes">
+                <i class='bx bx-image-alt' ></i>
+            </span>
+            <span class="icono camara__voltear">
+                <i class='bx bx-refresh' ></i>
+            </span>
+            
         </div>
+
+        
 
     </div>
 </body>
